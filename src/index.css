@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* CSS */
+.navbar-menu a {
+  @apply no-underline;
+  @apply relative;
+}
+
+.navbar-menu a span {
+  @apply absolute;
+  @apply block;
+  @apply w-full;
+  @apply h-[2px];
+  @apply bottom-[-5px];
+  @apply left-0;
+  @apply transform;
+  @apply transition-all;
+  @apply duration-300;
+  @apply ease-in-out;
+  transform-origin: left;
+  transform: scaleX(0);
+  visibility: hidden;
+}
+
+.navbar-menu a:hover span {
+  visibility: visible;
+  transform: scaleX(1);
+}
