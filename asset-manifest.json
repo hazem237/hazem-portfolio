@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/hazem-portfolio/static/css/main.21d87a73.css",
+    "main.js": "/hazem-portfolio/static/js/main.10612c03.js",
+    "static/media/profile-image.png": "/hazem-portfolio/static/media/profile-image.aa8b48681814b829e46a.png",
+    "index.html": "/hazem-portfolio/index.html",
+    "main.21d87a73.css.map": "/hazem-portfolio/static/css/main.21d87a73.css.map",
+    "main.10612c03.js.map": "/hazem-portfolio/static/js/main.10612c03.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21d87a73.css",
+    "static/js/main.10612c03.js"
+  ]
+}
