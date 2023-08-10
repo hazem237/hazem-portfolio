@@ -77,7 +77,7 @@ const NavBar: React.FC = () => {
           onChange={toggleDarkMode}
           size={25}
           sunColor="#DAA520"
-          moonColor="#D3D3D3"
+          moonColor='#1E90FF'
         />
       </div>
     </nav>

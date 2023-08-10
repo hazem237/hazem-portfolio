@@ -6,7 +6,7 @@ import {
   FaTwitter,
   FaInstagram,
   FaBehance,
-} from "react-icons/fa"; 
+} from "react-icons/fa";
 
 const HomePage: React.FC = () => {
   const { isDarkMode } = useTheme();
@@ -21,7 +21,13 @@ const HomePage: React.FC = () => {
     >
       {/* Left side - Title */}
       <div className="text-3xl md:text-6xl font-bold text-black w-full md:w-1/2 h-full text-center flex flex-col justify-center items-center p-8">
-        <span className="text-yellow-600">Crafting Digital Dreams </span>
+        <span
+          className={`${
+            isDarkMode ? ThemesColors.Blue.font : ThemesColors.Golden.font
+          }`}
+        >
+          Crafting Digital Dreams{" "}
+        </span>
         <span
           className={`text-xl mt-4 mb-3 ${
             isDarkMode ? ThemesColors.DarkTheme.font : ThemesColors.Light.font
@@ -31,15 +37,29 @@ const HomePage: React.FC = () => {
         </span>
         <div className="h-2 w-28 mt-4 bg-gold md:bg-black"></div>
         <div>
-          <button className="bg-yellow-500 text-xl p-3 rounded-md hover:bg-yellow-600 transition">
+          <button
+            className={`${
+              isDarkMode
+                ? ThemesColors.Blue.background
+                : ThemesColors.Golden.background
+            } text-xl p-3 rounded-md hover:bg-yellow-600 transition`}
+          >
             Preview Resume
           </button>
         </div>
       </div>
       {/* Right side - Profile Image */}
-      <div className="mt-8 md:mt-0 md:ml-16 md:flex-shrink-0 w-full md:w-1/2 h-full flex justify-around items-center">
+      <div className="mt-8 md:mt-0 md:ml-16 md:flex-shrink-0 w-full md:w-1/2 h-full flex justify-around items-center ">
         <div
-          className="w-1/2 h-1/2 bg-yellow-500 rounded-full relative flex justify-start items-center md:rounded-none"
+          className={`w-1/2 h-1/2 transition-all duration-700 ${
+            isDarkMode
+              ? ThemesColors.Blue.background
+              : ThemesColors.Golden.background
+          } relative flex justify-start items-center ${
+            isDarkMode
+              ? "rounded-full md:rounded-none"
+              : "rounded-none md:rounded-full"
+          }  `}
           style={{
             border: `8px solid ${
               isDarkMode
@@ -62,8 +82,16 @@ const HomePage: React.FC = () => {
             rel="noopener noreferrer"
             className="flex flex-col justify-center items-center hover:text-yellow-700"
           >
-            <FaLinkedin className="text-4xl text-yellow-600" />
-            <hr className="w-6 h-1 bg-yellow-600 my-2" />
+            <FaLinkedin
+              className={`text-4xl ${
+                isDarkMode ? ThemesColors.Blue.font : ThemesColors.Golden.font
+              }`}
+            />
+            <hr
+              className={`w-6 h-1 ${
+                isDarkMode ? ThemesColors.Blue.font : ThemesColors.Golden.font
+              } my-2`}
+            />
           </a>
           <a
             href="https://www.instagram.com/hazem.haddad2/"
@@ -71,8 +99,16 @@ const HomePage: React.FC = () => {
             rel="noopener noreferrer"
             className="flex flex-col justify-center items-center hover:text-yellow-700"
           >
-            <FaInstagram className="text-4xl text-yellow-600" />
-            <hr className="w-6 h-1 bg-yellow-600 my-2" />
+            <FaInstagram
+              className={`text-4xl ${
+                isDarkMode ? ThemesColors.Blue.font : ThemesColors.Golden.font
+              }`}
+            />
+            <hr
+              className={`w-6 h-1 ${
+                isDarkMode ? ThemesColors.Blue.font : ThemesColors.Golden.font
+              } my-2`}
+            />
           </a>
           <a
             href="https://github.com/hazem237"
@@ -80,8 +116,16 @@ const HomePage: React.FC = () => {
             rel="noopener noreferrer"
             className="flex flex-col justify-center items-center hover:text-yellow-700"
           >
-            <FaGithub className="text-4xl text-yellow-600" />
-            <hr className="w-6 h-1 bg-yellow-600 my-2" />
+            <FaGithub
+              className={`text-4xl ${
+                isDarkMode ? ThemesColors.Blue.font : ThemesColors.Golden.font
+              }`}
+            />
+            <hr
+              className={`w-6 h-1 ${
+                isDarkMode ? ThemesColors.Blue.font : ThemesColors.Golden.font
+              } my-2`}
+            />
           </a>
           <a
             href="https://www.behance.net/hazemalhaddad/projects"
@@ -89,8 +133,16 @@ const HomePage: React.FC = () => {
             rel="noopener noreferrer"
             className="flex flex-col justify-center items-center hover:text-yellow-700"
           >
-            <FaBehance className="text-4xl text-yellow-600" />
-            <hr className="w-6 h-1 bg-yellow-600 my-2" />
+            <FaBehance
+              className={`text-4xl ${
+                isDarkMode ? ThemesColors.Blue.font : ThemesColors.Golden.font
+              }`}
+            />
+            <hr
+              className={`w-6 h-1 ${
+                isDarkMode ? ThemesColors.Blue.font : ThemesColors.Golden.font
+              } my-2`}
+            />
           </a>
         </div>
       </div>

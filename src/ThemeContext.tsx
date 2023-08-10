@@ -17,8 +17,16 @@ export const ThemesColors = {
   },
   Light: {
     font: "text-black",
-    background: "bg-white",
+    background: "bg-[#F7F1E5]",
   },
+  Golden:{
+    font : "text-yellow-500",
+    background:"bg-yellow-500"
+  },
+  Blue:{
+    font :"text-blue-500",
+    background:"bg-blue-500"
+  }
 };
 
 export const useTheme = () => useContext(ThemeContext);
