@@ -16,17 +16,6 @@ const NavBar: React.FC = () => {
     setIsMenuOpen(false);
   };
 
-  const handleResize = () => {
-    if (window.innerWidth >= 768 && isMenuOpen) {
-      setIsMenuOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [isMenuOpen]);
-
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-10 flex items-center justify-end p-4 ${

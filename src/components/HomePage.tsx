@@ -3,7 +3,6 @@ import { ThemesColors, useTheme } from "../ThemeContext";
 import {
   FaLinkedin,
   FaGithub,
-  FaTwitter,
   FaInstagram,
   FaBehance,
 } from "react-icons/fa";
