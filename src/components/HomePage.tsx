@@ -32,7 +32,7 @@ const HomePage: React.FC = () => {
             isDarkMode ? ThemesColors.DarkTheme.font : ThemesColors.Light.font
           }`}
         >
-          Hazem Haddad's Journey as a Developer and Graphic Designer Test
+          Hazem Haddad's Journey as a Developer and Graphic Designer Test2
         </span>
         <div className="h-2 w-28 mt-4 bg-gold md:bg-black"></div>
         <div>
