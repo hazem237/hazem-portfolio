@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { RiMenuLine } from "react-icons/ri";
 import { ThemesColors, useTheme } from "../ThemeContext";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
