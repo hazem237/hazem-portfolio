@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/hazem-portfolio/static/css/main.138ebe9d.css",
-    "main.js": "/hazem-portfolio/static/js/main.8938f714.js",
+    "main.js": "/hazem-portfolio/static/js/main.afb17317.js",
     "static/media/profile-image.png": "/hazem-portfolio/static/media/profile-image.aa8b48681814b829e46a.png",
     "index.html": "/hazem-portfolio/index.html",
     "main.138ebe9d.css.map": "/hazem-portfolio/static/css/main.138ebe9d.css.map",
-    "main.8938f714.js.map": "/hazem-portfolio/static/js/main.8938f714.js.map"
+    "main.afb17317.js.map": "/hazem-portfolio/static/js/main.afb17317.js.map"
   },
   "entrypoints": [
     "static/css/main.138ebe9d.css",
-    "static/js/main.8938f714.js"
+    "static/js/main.afb17317.js"
   ]
 }
