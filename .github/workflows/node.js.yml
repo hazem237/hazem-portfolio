@@ -27,6 +27,7 @@ jobs:
         uses: codecov/codecov-action@v3
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        flags: -f coverage/lcov-report/*.json
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
