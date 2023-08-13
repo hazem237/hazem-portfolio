@@ -9,7 +9,7 @@ permissions:
   contents: write    
 
 jobs:
-  CI/CD:
+  CI-CD:
 
     runs-on: ubuntu-latest
 
