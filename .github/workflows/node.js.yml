@@ -2,40 +2,29 @@ name: Deploy using GitHub Action
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   pull_request:
-    branches: ["main"]
+    branches: [ "main" ]
 permissions:
-  contents: write
+  contents: write    
 
 jobs:
-  build:
+  CI/CD:
+
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: "npm"
-      - run: npm ci
-      - run: npm install --save-dev @babel/plugin-proposal-private-property-in-object
-      - run: npm run build --if-present
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Print Current Directory
-        run: pwd
-
-      - name: List Contents of Directory
-        run: ls -la
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: ${{ github.workspace }}/build
-
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2  
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm install --save-dev @babel/plugin-proposal-private-property-in-object  
+    - run: npm run build --if-present
+    # - run: npm test
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+          folder: build
