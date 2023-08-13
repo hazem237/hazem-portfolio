@@ -33,7 +33,14 @@ jobs:
           ls -la
           ls -la build
 
+      - name: Print Current Directory
+        run: pwd
+
+      - name: List Contents of Directory
+        run: ls -la
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build
+          folder: ${{ github.workspace }}/build
+
