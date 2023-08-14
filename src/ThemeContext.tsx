@@ -17,7 +17,7 @@ export const ThemesColors = {
   },
   Light: {
     font: "text-black",
-    background: "bg-green-300",
+    background: "bg-[#F7F1E5]",
   },
   Golden:{
     font : "text-yellow-500",
